@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Course Registration Form</h1>
+
+    <form
+      action="https://tai.thetapacademy.com/"
+      autocomplete="on"
+      autocorrect="on"
+      autocapitalize="on"
+    >
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td><label for="fname">First Name</label></td>
+            <td>
+              <input
+                name="fname"
+                id="fname"
+                type="text"
+                required
+                placeholder="EX: Mahalaxmi"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="lname">Last Name</label></td>
+            <td>
+              <input
+                name="lname"
+                id="lname"
+                type="text"
+                required
+                placeholder="EX: Gouda"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Pnumber">Mobile Number</label></td>
+            <td>
+              <input
+                name="Pnumber"
+                id="Pnumber"
+                type="tel"
+                required
+                placeholder="EX: 98765 43210"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td>
+              <input
+                name="email"
+                id="email"
+                type="email"
+                required
+                placeholder="EX: mahalaxmigouda2004@gmail.com"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td>
+              <input
+                name="password"
+                id="password"
+                type="password"
+                required
+                placeholder="Password"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Confirm Password</label></td>
+            <td>
+              <input
+                name="password"
+                id="password"
+                type="password"
+                required
+                placeholder="Password"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dob">DOB</label></td>
+            <td><input name="dob" id="dob" type="date" required /></td>
+          </tr>
+          <tr>
+            <td><label for="age">Age</label></td>
+            <td>
+              <input
+                name="age"
+                id="age"
+                type="number"
+                required
+                placeholder="Age"
+                min="18"
+                max="65"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="gender">Gender</label></td>
+            <td>
+              <input type="radio" name="gender" value="Male" required />
+              <label for="gender">Male</label>
+              <input type="radio" name="gender" value="Female" />
+              <label for="gender">Female</label>
+              <input type="radio" name="gender" value="Others" />
+              <label for="gender">Others</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="country">Select Country</label></td>
+            <td>
+              <select name="country" id="country" required>
+                <option value="Select Country">--select Country--</option>
+                <option value="India">India</option>
+                <option value="Korea">Korea</option>
+                <option value="China">China</option>
+                <option value="Germany">Germany</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="picture">Upload Picture</label></td>
+            <td><input name="picture" id="picture" type="file" required /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button type="reset">Reset</button></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Course Details</legend>
+        <table>
+          <tr>
+            <td><label for="course">Select Course</label></td>
+            <td>
+              <select name="course" id="course" required>
+                <option value="select course">--select course--</option>
+                <option value="Java Full Stack Developer">
+                  Java Full Stack Developer
+                </option>
+                <option value="Python">Python</option>
+                <option value="React">React</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dmode">Delivery Mode</label></td>
+            <td>
+              <input name="dmode" value="Online" type="radio" required />
+              <label for="dmode">Online</label>
+              <input name="dmode" value="Offline" type="radio" />
+              <label for="dmode">Offline</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="comments">Comments</label></td>
+            <td><textarea name="comments" id="comments"></textarea></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button type="submit">Apply</button></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
